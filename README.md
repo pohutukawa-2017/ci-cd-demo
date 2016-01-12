@@ -84,7 +84,33 @@ We've also included some tests. You can see them in `test/tests.js` and you can 
 jspm-server
 ```
 
-And then going to [http://localhost:8080/test.html](http://localhost:8080/test.html). You should see some failing tests.
+And then going to [http://localhost:8080/test.html](http://localhost:8080/test.html). You should see some failing tests, like this:
+
+![Failing tests](./images/failing-tests.png)
 
 Your task: make these tests pass and create an output that looks something like the ones in the images above.
 
+## Hints
+
+If you don't already have it installed, you might like to add the [React plugin](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en) to Chrome. This will add a tab in Developer Tools that will allow you to explore the [virtual DOM](http://tonyfreed.com/blog/what_is_virtual_dom) created by React.
+
+You can refer to [this example](https://github.com/chasm/tic-tac-react) to see a working React application using the exact techniques described here, including the testing. In fact, this challenge was based on that code. The README has a nice explanation of it all works.
+
+These resources might be useful:
+
+- [SVG](https://developer.mozilla.org/en/docs/Web/SVG)
+- [`circle`](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/circle)
+- [`import`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import)
+- [Destructuring assignment](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)
+- [`const`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const) variables are mutable!
+- [`let`](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Statements/let)
+- [`export`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export)
+- [React Component](https://facebook.github.io/react/docs/reusable-components.html#es6-classes)
+- [React Component API](https://facebook.github.io/react/docs/component-api.html)
+- [How State Works](https://facebook.github.io/react/docs/interactivity-and-dynamic-uis.html#how-state-works)
+- [`setState`](https://facebook.github.io/react/docs/component-api.html#setstate)
+- [React Event Handling](https://facebook.github.io/react/docs/interactivity-and-dynamic-uis.html#a-simple-example)
+- [`ReactDOM.render`](https://facebook.github.io/react/docs/top-level-api.html#reactdom.render)
+- [Color](https://developer.mozilla.org/en/docs/Web/CSS/color_value)
+- [React TestUtils](https://facebook.github.io/react/docs/test-utils.html)
+- [Chai BDD API](http://chaijs.com/api/bdd/)
