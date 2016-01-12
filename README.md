@@ -114,3 +114,4 @@ These resources might be useful:
 - [Color](https://developer.mozilla.org/en/docs/Web/CSS/color_value)
 - [React TestUtils](https://facebook.github.io/react/docs/test-utils.html)
 - [Chai BDD API](http://chaijs.com/api/bdd/)
+- [Ramda](http://ramdajs.com/docs/)
