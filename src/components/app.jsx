@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 class App extends Component {
 
   handleClick (event) {
-    console.log("You clicked on the circle.", event)
+    console.log("You clicked on the circle.")
   }
 
   render () {

@@ -1,9 +1,10 @@
 import React from 'react'
+import ReactDOM from 'react-dom'
 import TestUtils from 'react-addons-test-utils'
 
-import { expect } from 'chai'
+import { assert, expect } from 'chai'
 
-import App from '../app/components/app.jsx!'
+import App from '../src/components/app.jsx'
 
 const {
   isCompositeComponent,
