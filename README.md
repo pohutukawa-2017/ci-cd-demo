@@ -19,8 +19,9 @@ Here you'll find a browserify app all set up and ready to get started. Just clon
 ```sh
 npm install
 npm run build
-npm start
 ```
+
+This will build your app and run watchify to rebuild it whenever you change your JavaScript code in the `src` folder. Then open a new terminal window in the same project folder and run `npm start` to start the webserver on port 8008: [http://localhost:8008/](http://localhost:8008/). You can now load the page in your browser. Use Control-C to stop watchify and/or the server.
 
 The `src/index.jsx` file looks like this:
 
@@ -58,7 +59,7 @@ export default App
 
 We import `Component` from React using destructuring assignment (Google it), then we extend the React Component to create our own App component. This gives us React superpowers. Then we write our own `render` method. React will call this automatically whenever it wants to render this component, and whatever we return will be processed into HTML and rendered to the window.
 
-Here we're rendering some SVG (Scalable Vector Graphics). It draws a circle with the center 50px from the top and 50px from the left of the parent element. The circle has a radius of 10px and is filled with red.
+Here we're rendering some SVG (Scalable Vector Graphics). It draws a circle with the center 50px from the top (`cy`) and 50px from the left (`cx`) of the parent element. The circle has a radius of 10px (`r`) and is filled with red (`fill`).
 
 Your job is to create a new Circle component in `src/components/circle.jsx` that wraps this SVG element and adds some new features. The most important of these is an onClick property. You'll want to pass a click handling method into your Circles and then pass the center and radius back to the App, which will use that information to add the four new circles *if they don't already exist*.
 
@@ -67,6 +68,8 @@ We've also included some tests. You can see them in `test/tests.js` and you can 
 ```sh
 npm test
 ```
+
+Maybe in a third terminal tab?
 
 You should see some failing tests, like this:
 
@@ -99,4 +102,5 @@ These resources might be useful:
 - [Chai BDD API](http://chaijs.com/api/bdd/)
 - [Ramda](http://ramdajs.com/docs/)
 - [browserify](http://browserify.org/)
+- [watchify](http://spapas.github.io/2015/05/27/using-browserify-watchify/)
 

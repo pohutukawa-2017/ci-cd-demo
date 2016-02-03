@@ -4,7 +4,7 @@
   "description": "Circles on circles on circles, the React way.",
   "main": "src/index.jsx",
   "scripts": {
-    "build-js": "browserify  src/index.jsx > public/js/app.js",
+    "build-js": "watchify  src/index.jsx -o public/js/app.js -v",
     "build": "npm run build-js",
     "start": "http-server public -p 8008",
     "test": "mocha --opts ./test/mocha.opts --compilers js:babel-core/register test/tests.js"
@@ -45,7 +45,8 @@
     "react-dom": "^0.14.7",
     "react-redux": "^4.2.1",
     "react-router": "^2.0.0-rc5",
-    "redux": "^3.2.1"
+    "redux": "^3.2.1",
+    "watchify": "^3.7.0"
   },
   "devDependencies": {
     "chai": "^3.5.0",
