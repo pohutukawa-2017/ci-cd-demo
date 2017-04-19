@@ -6,5 +6,9 @@ body {
 }
 
 circle {
-  fill: red;
+  opacity: 0.3;
+}
+
+svg {
+  border: thin solid lightgrey;
 }
