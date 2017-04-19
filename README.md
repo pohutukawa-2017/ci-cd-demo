@@ -1,21 +1,8 @@
 # Enspiraled
 
-## Concepts
+For this challenge, you'll be making a basic fractal generator that starts with a single large circle. Click on the circle and four new circles of half the original circle's radius will appear at the cardinal compass points, north, south, east and west. Click on any of those circles and the process is repeated.
 
-Number | Name
--------|-------------------
-1.     | [SVG](https://developer.mozilla.org/en/docs/Web/SVG)
-2.     | [React](https://facebook.github.io/react/)
-3.     | [React TestUtils](https://facebook.github.io/react/docs/test-utils.html)
-4.     | [Mocha](https://mochajs.org/)
-5.     | [browserify](http://browserify.org/)
-6.     | [watchify](http://spapas.github.io/2015/05/27/using-browserify-watchify/)
-
-## Procedure
-
-Let's learn some basic React using JavaScript 2015-style classes and a few other JS2015 tricks.
-
-For this challenge, you'll be making a basic fractal generator that starts with a single large circle. Click on the circle and four new circles of half the original circle's radius will appear at the cardinal compass points, N, E, S, and W. Click on any of those circles and the process is repeated.
+## Setup
 
 Here is the base state at load:
 
