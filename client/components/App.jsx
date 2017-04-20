@@ -6,8 +6,7 @@ const circle = {
   cx: 400,
   cy: 400,
   r: 256,
-  level: 0,
-  isOn: false
+  level: 0
 }
 
 const App = () => {

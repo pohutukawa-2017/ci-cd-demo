@@ -8,8 +8,8 @@ class Circle extends React.Component {
     super(props)
 
     this.state = {
-      circle: props.circle,
-      children: []
+      children: [],
+      isOn: false
     }
 
     this.handleClick = this.handleClick.bind(this, props.circle)
@@ -21,21 +21,19 @@ class Circle extends React.Component {
     const children = []
     const { cx, cy, r } = eventedCircle
     const level = eventedCircle.level + 1
-    const circle = Object.assign({}, eventedCircle)
-    circle.isOn = true
 
     children.push(
-      { cx: cx, cy: cy - r, r: r / 2, level, isOn: false }, // north
-      { cx: cx, cy: cy + r, r: r / 2, level, isOn: false }, // south
-      { cx: cx + r, cy: cy, r: r / 2, level, isOn: false }, // east
-      { cx: cx - r, cy: cy, r: r / 2, level, isOn: false }  // west
+      { cx: cx, cy: cy - r, r: r / 2, level }, // north
+      { cx: cx, cy: cy + r, r: r / 2, level }, // south
+      { cx: cx + r, cy: cy, r: r / 2, level }, // east
+      { cx: cx - r, cy: cy, r: r / 2, level }  // west
     )
 
-    this.setState({ circle, children })
+    this.setState({ children, isOn: true })
   }
 
   render () {
-    const { cx, cy, r, level } = this.state.circle
+    const { cx, cy, r, level } = this.props.circle
     const color = getColor(level)
 
     return (
