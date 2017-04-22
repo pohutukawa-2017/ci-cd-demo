@@ -24,19 +24,26 @@ And after you've completed this project, this is what it can look like after a f
 
 ## Your starting place
 
-As we start our jouney, most of the interesting stuff can be found in `client/components/App.jsx`. Here are its contents:
+Our journey begins in `client/components/App.jsx`. Here are its contents:
 
 ```jsx
 import React from 'react'
 
-class App extends React.Component {
-  render () {
-    return (
-      <svg width='800' height='800'>
-        <circle cx={400} cy={400} r={256} />
-      </svg>
-    )
+import Circle from './Circle'
+
+const App = props => {
+  const circle = {
+    cx: props.width / 2,
+    cy: props.height / 2,
+    level: 0,
+    r: 256
   }
+
+  return (
+    <svg width={props.width} height={props.height}>
+      <circle cx={circle.cx} cy={circle.cy} r={circle.r} />
+    </svg>
+  )
 }
 
 export default App
