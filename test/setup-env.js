@@ -8,6 +8,4 @@ global.window = new JSDOM('<body></body>', {
     window.height = 400
   }
 })
-global.document = global.window.document
-global.navigator = global.window.navigator
 
