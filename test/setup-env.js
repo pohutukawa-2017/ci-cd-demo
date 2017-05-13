@@ -2,10 +2,14 @@ require('babel-register')
 
 const { JSDOM } = require('jsdom')
 
-global.window = new JSDOM('<body></body>', {
+const dom = new JSDOM('<body></body>', {
   beforeParse (window) {
-    window.width = 200
-    window.height = 400
+    window.innerWidth = 200
+    window.innerHeight = 400
   }
 })
+
+global.window = dom.window
+global.document = dom.window.document
+global.navigator = dom.window.navigator
 

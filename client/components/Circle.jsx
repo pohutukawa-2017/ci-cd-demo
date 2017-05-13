@@ -8,16 +8,13 @@ class Circle extends React.Component {
     super(props)
 
     this.state = {
-      children: [],
-      isOn: false
+      children: []
     }
 
     this.handleClick = this.handleClick.bind(this, props.circle)
   }
 
   handleClick (eventedCircle) {
-    if (eventedCircle.isOn) return
-
     const children = []
     const { cx, cy, r } = eventedCircle
     const level = eventedCircle.level + 1
@@ -29,7 +26,7 @@ class Circle extends React.Component {
       { cx: cx - r, cy: cy, r: r / 2, level }  // west
     )
 
-    this.setState({ children, isOn: true })
+    this.setState({children})
   }
 
   render () {

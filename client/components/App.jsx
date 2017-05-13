@@ -2,16 +2,19 @@ import React from 'react'
 
 import Circle from './Circle'
 
-const App = props => {
+const App = () => {
+  const width = window.innerWidth
+  const height = window.innerHeight
+
   const circle = {
-    cx: props.width / 2,
-    cy: props.height / 2,
+    cx: width / 2,
+    cy: height / 2,
     level: 0,
     r: 256
   }
 
   return (
-    <svg width={props.width} height={props.height}>
+    <svg width={width} height={height}>
       <Circle circle={circle} />
     </svg>
   )
