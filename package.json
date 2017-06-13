@@ -5,8 +5,7 @@
   "main": "server",
   "scripts": {
     "start": "node server",
-    "test": "ava test/tests.js",
-    "postinstall": "webpack"
+    "test": "ava test/tests.js"
   },
   "repository": {
     "type": "git",
