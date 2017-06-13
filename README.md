@@ -10,3 +10,4 @@ We'll use [Travis CI](https://travis-ci.org) to run our tests and deploy to Hero
 * Add a `.travis.yml` file
 * Install the Travis CI and the Heroku CLI tools
 * Add the required settings in the `.travis.yml` file
+* Push to GitHub
