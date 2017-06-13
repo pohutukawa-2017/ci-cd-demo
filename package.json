@@ -5,7 +5,8 @@
   "main": "server",
   "scripts": {
     "start": "node server",
-    "test": "ava test/tests.js"
+    "test": "ava test/tests.js",
+    "postinstall": "webpack"
   },
   "repository": {
     "type": "git",
@@ -13,9 +14,6 @@
   },
   "author": "EDA",
   "license": "MIT",
-  "engines": {
-    "node": ">=6.10 <7.0"
-  },
   "bugs": {
     "url": "https://github.com/pohutukawa-2017/ci-cd-demo/issues"
   },

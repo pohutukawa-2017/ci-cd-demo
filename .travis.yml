@@ -5,6 +5,3 @@ deploy:
   app: pohutukawa-enspiraled
   api_key:
     secure: oGCYvC7dbU5qm8fE+2Hl5ySbj/jQy5TLc9725+trmzlh3XJnw6xFKXxf4oEb+bUO5bBfp8uiZWGN9Y5Ihv68y1qPl0PAJAylVCSn68O7reaDI6e/hZ+AP9s/5gqS6BiGJahk39kb1i9JFMW8e8RbhKpl+e/Dag7M/paBXbRYA1P7/Yled/a0H8oX5vWbmVm77nZOxM4lwjy6Qpt2GR7dWP8u60NOv780AyK1emHomCCnGUcFmWac/IOCBMrP5MA0fmmjtWpopheyEHFiJzgf+lLAR75xuGt3aHGhiPWZi2mfmwD7fUUm+E3Hl1+A8CX1RHtfau2nf2WR9zDed93+fOFHfjal5HztW/gEA6wJDLWR5NSlOVR7JN/2O0avaB95Uk+yvI7NH1NS5kuHKlBFsbuYA1qmlkJ6SvRgI4uskCVjh7vLyJ1z9Dgir0bYqLppA3k2r/2HVD+yR/dVqsP9tEeLoRIL6pT+ChaJr00WHwTLyBTLl1sTafIRxURs0rEOJwWXi+fiafNvwQJtj7raBJejym9wdqmJa9eNkGfDNpeVoW+ZY/AiSIvzGksGlJQB6Al5auWy5Zv1x+VcmLlqy/3x1BMwvVgiwz3SejD8FnPTLSxQeVHvkE5j6manjQtrznqGW06GNJYp+1hsY+aSMAOWq4OsDgHiZeowtIkVhqw=
-  run:
-  - webpack
-  - knex migrate:latest
