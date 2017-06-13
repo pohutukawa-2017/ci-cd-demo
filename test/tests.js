@@ -16,7 +16,7 @@ test('App contains an <svg> element with the correct size', (t) => {
 
 test('App contains an initial circle in the correct location', (t) => {
   const expectedX = 100 // half of width
-  const expectedY = 200 // half of height
+  const expectedY = 100 // half of height
 
   const wrapper = shallow(<App width='200' height='400' />)
 
